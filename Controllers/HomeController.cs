@@ -15,13 +15,28 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.listaSeries = BD.ListarSeries();
         return View();
+    }
+   
+    public Series verSeriesAjax()
+    {
+        ViewBag.listaSeries = BD.ListarSeries();
+        return ViewBag.listaSeries;
     }
 
-    public IActionResult Privacy()
+    public Actores verActoresAjax(int IdSerie)
     {
-        return View();
+        ViewBag.listaActores = BD.ListarActores(IdSerie);
+        return ViewBag.listaActores;
     }
+
+    public Temporadas verTemporadasAjax(int IdSerie)
+    {
+        ViewBag.listaTemporadas = BD.ListarTemoporadas(IdSerie);
+        return ViewBag.listaTemporadas;
+    }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

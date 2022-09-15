@@ -3,6 +3,23 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Bienvenido a Ruclot Series</h1>
+    <img src = "logo.jpg" style = "witdh: 35%; height: 20%;">
+    <p>slogan</p>
 </div>
+@foreach(Series  SerieActual in @ViewBag.listaSeries)
+{
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"></h5> 
+        <img src = "@SerieActual.ImagenSerie"><br/>
+        <a href="#" class="btn btn-primary" style="background-color: red;">Temporadas</a>
+        <a href="#" class="btn btn-primary" style="background-color: green;">Actores</a>
+        <a href="#" class="btn btn-primary" style="background-color: yellow;">Mas Info</a>
+      </div>
+    </div>
+  </div>
+  </div>
+}
