@@ -14,9 +14,9 @@ using Dapper;
 namespace TP8JS;
 
 public class Actores{
-    public int _IdActor{get; private set;}
-    public int  _IdSerie{get; private set;}
-    public string _Nombre{get; private set;}
+    private int _IdActor;
+    private int  _IdSerie;
+    private string _Nombre;
 
 
 public Actores(){
@@ -27,6 +27,23 @@ public Actores (int IdActor, int IdSerie, string Nombre){
     _IdActor = IdActor;
     _IdSerie = IdSerie;
     _Nombre = Nombre;    
+}
+public int IdActor
+{
+    set{_IdActor = value;}
+    get{return _IdActor;}
+}
+
+public int IdSerie
+{
+    set{_IdSerie = value;}
+    get{return _IdSerie;}
+}
+
+public string Nombre
+{
+    set{_Nombre = value;}
+    get{return _Nombre;}
 }
 
 }

@@ -16,7 +16,7 @@ namespace TP8JS.Models;
 public static class BD
 {
     
-    private static string _connectionString = @"Server=A-PHZ2-CIDI-027;DataBase=BDSeries;Trusted_Connection=True;";
+    private static string _connectionString = @"Server=A-PHZ2-CIDI-008;DataBase=BDSeries;Trusted_Connection=True;";
     
 private static  List<Series> _ListaSeries = new List<Series>();
  public static List<Series> ListarSeries()

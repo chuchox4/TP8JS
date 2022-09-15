@@ -16,22 +16,45 @@ using Dapper;
 namespace TP8JS;
 
 public class Temporadas{
-    public int _IdTemporada{get; private set;}
-    public int  _IdSerie{get; private set;}
-    public string _NumeroTemporada{get; private set;}
+    private int _IdTemporada;
+    private int  _IdSerie;
+    private int _NumeroTemporada;
 
-    public string _TituloTemporada{get; private set;}
+    private string _TituloTemporada;
 
 
 public Temporadas(){
 
 }
 
-public Temporadas (int IdTemporada, int IdSerie, string NumeroTemporada, string TituloTemporada){
+public Temporadas (int IdTemporada, int IdSerie, int NumeroTemporada, string TituloTemporada){
     _IdTemporada = IdTemporada;
     _IdSerie = IdSerie;
     _NumeroTemporada = NumeroTemporada;
     _TituloTemporada = TituloTemporada;    
 }
+
+public int IdTemporada
+{
+    set{_IdTemporada = value;}
+    get{return _IdTemporada;}
+}
+
+public int IdSerie
+{
+    set{_IdSerie = value;}
+    get{return _IdSerie;}
+}
+public int NumeroTemporada
+{
+    set{_NumeroTemporada = value;}
+    get{return _NumeroTemporada;}
+}
+public string TituloTemporada
+{
+    set{_TituloTemporada = value;}
+    get{return _TituloTemporada;}
+}
+
 
 }

@@ -16,16 +16,16 @@ namespace TP8JS;
 
 public class Series{
 
-    public int _IdSerie{get; private set;}
+    private int _IdSerie;
 
-    public string _Nombre{get; private set;}
+    private string _Nombre;
 
-    public int _AñoInicio{get; private set;}
+    private int _AñoInicio;
 
 
-    public string _Sinopsis{get; private set;}
+    private string _Sinopsis;
 
-    public string _ImagenSerie{get; private set;}
+    private string _ImagenSerie;
 
 
 public Series(){
@@ -39,6 +39,36 @@ public Series(int IdSerie, string Nombre, int AñoInicio, string Sinopsis, strin
     _AñoInicio = AñoInicio;
     _Sinopsis = Sinopsis;
     _ImagenSerie = ImagenSerie;
+}
+
+public int IdSerie
+{
+    set{_IdSerie = value;}
+    get{return _IdSerie;}
+}
+
+public string Nombre
+{
+    set{_Nombre = value;}
+    get{return _Nombre;}
+}
+
+public int AñoInicio
+{
+    set{_AñoInicio = value;}
+    get{return _AñoInicio;}
+}
+
+public string Sinopsis
+{
+    set{_Sinopsis = value;}
+    get{return _Sinopsis;}
+}
+
+public string ImagenSerie
+{
+    set{_ImagenSerie = value;}
+    get{return _ImagenSerie;}
 }
 
 }
