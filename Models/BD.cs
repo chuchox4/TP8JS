@@ -16,7 +16,7 @@ namespace TP8JS.Models;
 public static class BD
 {
     
-    private static string _connectionString = @"Server=A-PHZ2-CIDI-008;DataBase=BDSeries;Trusted_Connection=True;";
+    private static string _connectionString = @"Server=A-phz2-cidi-053;DataBase=BDSeries;Trusted_Connection=True;";
     
 private static  List<Series> _ListaSeries = new List<Series>();
  public static List<Series> ListarSeries()
@@ -28,7 +28,14 @@ private static  List<Series> _ListaSeries = new List<Series>();
     return _ListaSeries;
    }
 
+public static Series ListarSeriesPorID(int IdSerie)
+   {
 
+    using(SqlConnection db =  new  SqlConnection(_connectionString)){
+        string sql = "Select *  FROM Series Where IdSerie = @IdSerie";
+        return db.QueryFirstOfDefault<Series>;(sql,new{@IdSerie = IdSerie});
+    }
+    }
 
 private static List<Actores> _ListaActores = new List<Actores>();
    public static List<Actores> ListarActores(int IdSerie)

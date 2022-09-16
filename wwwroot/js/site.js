@@ -1,14 +1,14 @@
 ﻿function VerInfoSerie(IDS) 
 {
     $.ajax({
-        URL: '/Home/VerSeriesAjax',
+        url: '/Home/VerSeriesAjax',
         data: {IdSerie : IDS},
         type: 'POST',
         dataType: 'JSON',
         success:
             function(response)
             {
-                $("#DescripcionSerie").html(response.nombre + response.añoInicio + response.sinopsis);
+                $("#DescripcionSerie").html(response.nombre + "<p>Año Inicio: </p>"+ response.añoInicio + "<br/>"+ response.sinopsis);
 
             }
     
@@ -18,15 +18,19 @@
 function VerActores(IDS) 
 {
     $.ajax({
-        URL: '/Home/VerActoresAjax',
+        url: '/Home/VerActoresAjax',
         data: {IdSerie : IDS},
         type: 'POST',
         dataType: 'JSON',
         success:
             function(response)
             {
-                $("#NombreActor").html(response.nombre);
-
+                let datos = "";
+                response.forEach(element => {
+                    
+                    datos += element.nombre + "</br>";
+                });
+                $("#NombreActor").html();
             }
     
     })
@@ -35,7 +39,7 @@ function VerActores(IDS)
 function VerTemporadas(IDS) 
 {
     $.ajax({
-        URL: '/Home/VerTemporadasAjax',
+        url: '/Home/VerTemporadasAjax',
         data: {IdSerie : IDS},
         type: 'POST',
         dataType: 'JSON',

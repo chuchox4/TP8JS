@@ -19,22 +19,21 @@ public class HomeController : Controller
         return View();
     }
    
-    public Series verSeriesAjax()
+    public List<Series> verSeriesAjax()
     {
-        ViewBag.listaSeries = BD.ListarSeries();
-        return ViewBag.listaSeries;
+        return BD.ListarSeries();
+    
     }
 
-    public Actores verActoresAjax(int IdSerie)
+    public List<Actores> verActoresAjax(int IdSerie)
     {
-        ViewBag.listaActores = BD.ListarActores(IdSerie);
-        return ViewBag.listaActores;
+        return BD.ListarActores(IdSerie);
+       
     }
 
-    public Temporadas verTemporadasAjax(int IdSerie)
+    public List<Temporadas> verTemporadasAjax(int IdSerie)
     {
-        ViewBag.listaTemporadas = BD.ListarTemoporadas(IdSerie);
-        return ViewBag.listaTemporadas;
+          return BD.ListarTemoporadas(IdSerie);
     }
 
 

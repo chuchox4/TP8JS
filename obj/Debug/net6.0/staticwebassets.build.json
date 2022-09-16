@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IdXsuWLq7iRhC58z6yHtbuetATGuKtRmBm+0QOLM6n0=",
+  "Hash": "0wWK8S3C/40GsSiUzEMmRueEjykRDEyzdoL7X4GSSSY=",
   "Source": "TP8JS",
   "BasePath": "_content/TP8JS",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\46916288\\Desktop\\TP8JS\\wwwroot\\Fondo.jpg",
+      "SourceId": "TP8JS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\46916288\\Desktop\\TP8JS\\wwwroot\\",
+      "BasePath": "_content/TP8JS",
+      "RelativePath": "Fondo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Fondo.jpg"
     },
     {
       "Identity": "C:\\Users\\46916288\\Desktop\\TP8JS\\wwwroot\\js\\site.js",
