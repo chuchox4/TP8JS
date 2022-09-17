@@ -8,7 +8,8 @@
         success:
             function(response)
             {
-                $("#DescripcionSerie").html(response.nombre + "<p>Año Inicio: </p>"+ response.añoInicio + "<br/>"+ response.sinopsis);
+                $("#Titulo").html("Info: ")
+                $("#DescripcionSerie").html(response.nombre + "<br/>"+ "Año Inicio: "+ response.añoInicio + "<br/>"+ response.sinopsis);
 
             }
     
@@ -30,7 +31,8 @@ function VerActores(IDS)
                     
                     datos += element.nombre + "</br>";
                 });
-                $("#NombreActor").html();
+                $("#Titulo").html("Actores: ")
+                $("#DescripcionSerie").html(datos);
             }
     
     })
@@ -46,8 +48,12 @@ function VerTemporadas(IDS)
         success:
             function(response)
             {
-                $("#NumeroActor").html(response.numeroTemporada);
-                $("#TituloTemporada").html(response.tituloTemporada);
+                var temp = "";
+                response.forEach(element => {
+                temp += element.numeroTemporada + " " + element.tituloTemporada + "<br/>";
+      });
+                $("#Titulo").html("Temporadas: ");
+                $("#DescripcionSerie").html(temp);
 
             }
     

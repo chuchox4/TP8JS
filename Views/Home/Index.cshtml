@@ -3,11 +3,11 @@
 }
 <body>
 <div class="text-center">
-    <h1 class="display-4">Bienvenido a Ruclot Series</h1>
-    <img src = "" style = "witdh: 35%; height: 20%;">
+    <h1 class="display-4"><img class ="logo"src="/logo.jpg" style="border-radius: 50% ; margin-right: 5%">Bienvenido a Ruclot Series</h1>
     <h3>Las mejores series en la mejor calidad</h3>
 </div>
-<div class="container-fluid p-5" style="background-color: rgba(73, 5, 5, 0.6);;">
+<div class="container
+-fluid p-5" style="background-color: rgba(73, 5, 5, 0.6);;">
   <div class = "row">
 @foreach(Series  SerieActual in @ViewBag.listaSeries)
 { 
@@ -24,16 +24,16 @@
          </div>   
 }
   </div>
-  <div class="modal fade" id="ModalSerie" tabindex="-1" role="dialog" aria-labelledby="NombreSerie" aria-hidden="true">
+  <div class="modal fade" id="ModalSerie" tabindex="-1" role="dialog" aria-labelledby="ModalSerie" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
+        <h5 class="modal-title text-dark" id="Titulo"></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body text-dark">
-        <div id = "DescripcionSerie"></div>
+      <div class="modal-body text-dark" id ="DescripcionSerie">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>

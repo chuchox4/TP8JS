@@ -19,9 +19,9 @@ public class HomeController : Controller
         return View();
     }
    
-    public List<Series> verSeriesAjax()
+    public Series verSeriesAjax(int IdSerie)
     {
-        return BD.ListarSeries();
+        return BD.ListarSeriesPorID(IdSerie);
     
     }
 

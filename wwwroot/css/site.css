@@ -18,3 +18,9 @@ body {
   background-image: url("/Fondo.jpg");
   color: white;
   font-family: monospace;}
+
+.Logo{
+  width: 15%;
+  height: 15%;
+  margin-left: 40%;
+}
