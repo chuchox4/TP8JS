@@ -487,11 +487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lauta\\Desktop\\TP8JS\\TP8JS.csproj",
+      "projectUniqueName": "C:\\Users\\lauta\\Downloads\\TP8JS\\TP8JS.csproj",
       "projectName": "TP8JS",
-      "projectPath": "C:\\Users\\lauta\\Desktop\\TP8JS\\TP8JS.csproj",
+      "projectPath": "C:\\Users\\lauta\\Downloads\\TP8JS\\TP8JS.csproj",
       "packagesPath": "C:\\Users\\lauta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lauta\\Desktop\\TP8JS\\obj\\",
+      "outputPath": "C:\\Users\\lauta\\Downloads\\TP8JS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lauta\\AppData\\Roaming\\NuGet\\NuGet.Config"

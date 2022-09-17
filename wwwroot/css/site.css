@@ -17,10 +17,18 @@ body {
   margin-bottom: 60px;
   background-image: url("/Fondo.jpg");
   color: white;
-  font-family: monospace;}
+  font-family: monospace;
+
+}
+  
 
 .Logo{
   width: 15%;
   height: 15%;
   margin-left: 40%;
+}
+
+.display-4{
+  -webkit-text-stroke: 1px white  ;
+  color: red;
 }
